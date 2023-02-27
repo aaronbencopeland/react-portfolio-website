@@ -21,6 +21,7 @@ function NavigationBar() {
             <Nav.Link href="/skills">Skills</Nav.Link>
             <Nav.Link href="/resume">Resume</Nav.Link>
             <Nav.Link href="/contact">Contact</Nav.Link>
+            <Nav.Link href="/contacts">Contacts</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Navbar>
