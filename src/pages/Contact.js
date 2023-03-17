@@ -1,163 +1,59 @@
-import React from 'react'
+import React from 'react';
+import "../styles/Contact.css";
 
 function Contact() {
   return (
     <>
-      {/* Some useful stuff here: https://ordinarycoders.com/blog/article/react-bootstrap-forms */}
-      <div
-        style={{
-          display: "flex",
-          flexDirection: "column",
-          gap: 10,
-          overflow: "hidden",
-          backgroundColor: "black",
-          height: "full",
-          flex: 0.75,
-          padding: 8,
-          alignItems: "center"
-        }}
-      >
-        <h3
-          style={{
-            color: "white",
-            fontWeight: "bold",
-            fontSize: "30px",
-          }}
-        >
-          Contact Me.
-        </h3>
+      <div id="contact-page">
+        <div className="contact-page-text">
+          <h3 className="contact-page-header">
+            Contact Aaron.
+          </h3>
+        </div>
 
-        <form 
-          style={{
-            color: "white",
-            display: "flex",
-            flexDirection: "column",
-            gap: 8,
-            marginTop: 12,
-            width: "fit-content",
-          }}
-        >
-          <label
-            style={{
-              display: "flex",
-              flexDirection: "column",
-              alignItems: "start",
-            }}
-          >
-            <span
-              style={{
-                color: "white",
-                fontWeight: 500,
-                marginBottom: 4,
-              }}
+        <div id="contact-form-container"> 
+          <form className="contact-page-form">
+            <label className="contact-form-field">
+              <span>
+                Name
+              </span>
+
+              <input className="contact-form-input"
+                type="text"
+                placeholder="John Doe"
+              />
+            </label>
+
+            <label className="contact-form-field">
+              <span>
+                Email Address
+              </span>
+
+              <input className="contact-form-input"
+                type="text"
+                placeholder="example@email.com"
+              />
+            </label>
+
+            <label className="contact-form-field">
+              <span>
+                Message
+              </span>
+
+              <textarea className="contact-form-input"
+                rows={7}
+                placeholder="Hi Aaron! 🐔"
+              />
+            </label>
+
+            <button className="contact-form-submit-button"
+              type="submit"
+              onClick={((e) => e.preventDefault())}
             >
-              Name
-            </span>
-
-            <input
-              style={{
-                paddingTop: "1rem"/* 16px */,
-                paddingBottom: "1rem"/* 16px */,
-                paddingLeft: "1.5rem"/* 16px */,
-                paddingRight: "1.5rem"/* 16px */,
-                borderRadius: "0.5rem"/* 8px */,
-                outline: "2px solid transparent",
-                outlineOffset: "2px",
-                borderStyle: "none",
-                fontWeight: 500,
-              }}
-              type="text"
-              placeholder="John Doe"
-            />
-          </label>
-
-          <label
-            style={{
-              display: "flex",
-              flexDirection: "column",
-              alignItems: "start",
-            }}
-          >
-            <span
-              style={{
-                color: "white",
-                fontWeight: 500,
-                marginBottom: 4,
-              }}
-            >
-              Email Address
-            </span>
-
-            <input
-              style={{
-                paddingTop: "1rem"/* 16px */,
-                paddingBottom: "1rem"/* 16px */,
-                paddingLeft: "1.5rem"/* 16px */,
-                paddingRight: "1.5rem"/* 16px */,
-                borderRadius: "0.5rem"/* 8px */,
-                outline: "2px solid transparent",
-                outlineOffset: "2px",
-                borderStyle: "none",
-                fontWeight: 500,
-              }}
-              type="text"
-              placeholder="example@email.com"
-            />
-          </label>
-
-          <label
-            style={{
-              display: "flex",
-              flexDirection: "column",
-              alignItems: "start",
-            }}
-          >
-            <span
-              style={{
-                color: "white",
-                fontWeight: 500,
-                marginBottom: 4,
-              }}
-            >
-              Message
-            </span>
-
-            <textarea
-              style={{
-                paddingTop: "1rem"/* 16px */,
-                paddingBottom: "1rem"/* 16px */,
-                paddingLeft: "1.5rem"/* 16px */,
-                paddingRight: "1.5rem"/* 16px */,
-                borderRadius: "0.5rem"/* 8px */,
-                outline: "2px solid transparent",
-                outlineOffset: "2px",
-                borderStyle: "none",
-                fontWeight: 500,
-              }}
-              rows={7} cols={19}
-              placeholder="Hi Aaron! 🐔"
-            />
-          </label>
-
-          <button
-            style={{
-              paddingTop: "0.75rem"/* 12px */,
-              paddingBottom: "0.75rem"/* 12px */,
-              paddingLeft: "2rem"/* 32px */,
-              paddingRight: "2rem"/* 32px */,
-              outline: "2px solid transparent",
-              outlineOffset: "2px",
-              width: "fit-content",
-              color: "#151030",
-              fontWeight: "bold",
-              borderRadius: "0.75rem"/* 12px */,
-            }}
-            type="submit"
-            onClick={((e) => e.preventDefault())}
-          >
-            Submit
-          </button>
-        </form>
+              Submit
+            </button>
+          </form>
+        </div>
       </div>
     </>
   )
