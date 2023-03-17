@@ -9,6 +9,10 @@ function Contact() {
           <h3 className="contact-page-header">
             Contact Aaron.
           </h3>
+
+          <p className="contact-page-welcome">
+            Thanks for taking the time to check out my portfolio.
+          </p>
         </div>
 
         <div id="contact-form-container"> 

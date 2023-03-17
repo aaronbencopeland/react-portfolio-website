@@ -60,7 +60,11 @@
   border-radius: 0.75rem;
   width: 100%
 }
-/* END Contact page responsive styles */
+
+.contact-page-welcome {
+  display: none;
+}
+/* END Contact page base styles */
 
 /* START Contact page responsive styles */
 @media only screen and (max-width: 800px) {
@@ -98,11 +102,18 @@
   }
 
   .contact-page-text {
+    flex-direction: column;
     padding-left: 40px;
     padding-right: 40px;
     margin-bottom: 40px;
+    gap: 2rem;
     width: 40%;
-    justify-content: center;
+    align-items: center;
+  }
+
+  .contact-page-welcome {
+    display: flex;
+    width: 70%;
   }
 }
 /* END Contact page responsive styles */
