@@ -17,7 +17,7 @@ function App() {
         <Routes>
           <Route path="/" element={<About />} />
           <Route path="/projects" element={<Projects />} />
-          <Route path="/skills" element={<Skills/>} />
+          <Route path="/skills" element={<Skills />} />
           <Route path="/resume" element={<Resume />} />
           <Route path="/contact" element={<Contact />} />
           { /** As a technique to add the navigation imports, after completing the process of adding the routes 
