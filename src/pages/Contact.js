@@ -23,6 +23,12 @@ function Contact() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+
+    if(form.name === '' || form.email === '' ||form.message === '') {
+      alert('Please ensure all fields are populated.');
+      return;
+    }
+
     setLoading(true);
 
     emailjs.send(
@@ -82,6 +88,7 @@ function Contact() {
                 name="name"
                 value={form.name}
                 onChange={handleTextFieldChange}
+                required
               />
             </label>
 
@@ -96,6 +103,7 @@ function Contact() {
                 name="email"
                 value={form.email}
                 onChange={handleTextFieldChange}
+                required
               />
             </label>
 
@@ -110,6 +118,7 @@ function Contact() {
                 name="message"
                 value={form.message}
                 onChange={handleTextFieldChange}
+                required
               />
             </label>
 
