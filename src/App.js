@@ -5,6 +5,7 @@ import './App.css';
 import NavigationBar from './components/NavigationBar';
 import About from './pages/About';
 import Contact from "./pages/Contact";
+import ProjectDisplay from "./pages/ProjectDisplay";
 import Projects from "./pages/Projects";
 import Resume from "./pages/Resume";
 import Skills from "./pages/Skills";
@@ -17,6 +18,8 @@ function App() {
         <Routes>
           <Route path="/" element={<About />} />
           <Route path="/projects" element={<Projects />} />
+          {/* <Route path="/experience" element={<Experience />} /> */}
+          <Route path="project/:id" element={<ProjectDisplay />} />
           <Route path="/skills" element={<Skills />} />
           <Route path="/resume" element={<Resume />} />
           <Route path="/contact" element={<Contact />} />
