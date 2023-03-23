@@ -1,0 +1,119 @@
+/* Start Contact page base styles */
+#contact-form-container {
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  background-color: white;
+}
+
+#contact-page {
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+
+.contact-form-input {
+  padding: 1rem 1.5rem;
+  border-radius: 0.5rem;
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+  font-weight: 500;
+  width: 100%;
+}
+
+.contact-form-input:focus {
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+}
+
+.contact-form-field {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  color: black;
+  font-weight: 500;
+  margin-bottom: 4px;
+}
+
+.contact-page-form {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  width: 100%;
+}
+
+.contact-page-header {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.contact-page-text {
+  display: flex;
+}
+
+.contact-form-submit-button {
+  padding: 0.75rem 2rem;
+  font-weight: bold;
+  border-radius: 0.75rem;
+  width: 100%
+}
+
+.contact-page-welcome {
+  display: none;
+}
+/* END Contact page base styles */
+
+/* START Contact page responsive styles */
+@media only screen and (max-width: 800px) {
+  #contact-form-container {
+    border-radius: 0px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  #contact-page {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contact-page-form {
+    margin-left: 0%;
+    margin-right: 0%;
+  }
+
+  .contact-page-text {
+    margin-left: 15px;
+  }
+}
+
+@media (min-width: 800px) {
+  #contact-form-container {
+    border-radius: 15px;
+    margin: 40px 40px 40px 0px;
+    justify-content: center;
+  }
+
+  .contact-page-form {
+    margin-left: 30%;
+    margin-right: 30%;
+  }
+
+  .contact-page-text {
+    flex-direction: column;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-bottom: 40px;
+    gap: 2rem;
+    width: 40%;
+    align-items: center;
+  }
+
+  .contact-page-welcome {
+    display: flex;
+    width: 70%;
+  }
+}
+/* END Contact page responsive styles */
